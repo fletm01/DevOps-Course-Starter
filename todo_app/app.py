@@ -10,4 +10,3 @@ app.config.from_object(Config())
 def index():
     return 'Hello World!'
 
-#test
