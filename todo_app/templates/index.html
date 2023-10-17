@@ -7,6 +7,17 @@
     <p class="lead">Just another to-do app.</p>
   </div>
 
+  <form action="add_new_items" method="post">
+    <div>
+      <label for="Title">Enter New Item Title: </label>
+      <input type="text" name="Title" required />
+    </div>
+    <div>
+      <input type="submit" value="Create New Item!" />
+    </div>
+  </form>
+<br>  
+<br>
   <div class="row">
     <div class="col-md-12">
       <h2>Items</h2>
@@ -16,5 +27,5 @@
         {% endfor %}
       </ol>
     </div>
-  </div>
+</div>
 {% endblock %}
