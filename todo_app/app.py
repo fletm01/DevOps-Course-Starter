@@ -18,11 +18,4 @@ def add_new_item():
     new_item_title = request.form.get('Title')
     add_item (new_item_title)
     return redirect('/')
-
-
-
-
-#@app.route('/add_new_items', methods=['POST'])
-#def additem():
-#    add_item = request.form.get('New Item Title')
-#    return redirect ???????
+    
