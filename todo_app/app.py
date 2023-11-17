@@ -18,4 +18,7 @@ def add_new_item():
     new_item_title = request.form.get('Title')
     add_item (new_item_title)
     return redirect('/')
-    
+
+@app.route('/complete-item/<todo_id>', methods=['POST'])
+def complete_items(todo_id):
+    return redirect('/')    

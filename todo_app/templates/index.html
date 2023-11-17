@@ -24,7 +24,9 @@
       <ol class="list-group mb-4">
         {% for items in my_items %}
           <li> {{ items.name }} - {{ items.status }}</li>
-        {% endfor %}
+          <form action="complete-items/{{items.id}}" method="post">
+            <button>Complete</button>
+          {% endfor %}
       </ol>
     </div>
 </div>
