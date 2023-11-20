@@ -39,3 +39,17 @@ def get_items():
             items.append(trello_card)  
 
     return items
+
+def move_item_to_done(item_id):
+    reqUrl = f"https://trello-proxy.azure-api.net/1/cards/{item_id}"
+
+    query_params = {
+        "key": os.getenv("TRELLO_API_KEY"),
+        "token": os.getenv("TRELLO_API_TOKEN"),
+        "idList": os.getenv("TRELLO_DONE_ID"),
+        }
+
+    response = requests.put(reqUrl, params=query_params)
+
+    response.raise_for_status()
+
