@@ -1,5 +1,9 @@
+from operator import itemgetter
+from typing import ItemsView
 import requests
 import os
+
+from todo_app.data.item import Item
 
 def add_item(title):
     reqUrl = "https://trello-proxy.azure-api.net/1/cards"
@@ -35,8 +39,8 @@ def get_items():
 
     for trello_list in response_list:
          for trello_card in trello_list["cards"]:
-            trello_card['status'] = trello_list ['name']
-            items.append(trello_card)  
+            item = Item.from_trello_card(trello_card, trello_list)
+            items.append(item)  
 
     return items
 
