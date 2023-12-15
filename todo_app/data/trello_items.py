@@ -1,5 +1,3 @@
-from operator import itemgetter
-from typing import ItemsView
 import requests
 import os
 
