@@ -22,7 +22,7 @@
     <div class="col-md-12">
       <h2>Items</h2>
       <ul class="list-group mb-4">
-        {% for items in my_items %}
+        {% for items in view_model.items %}
           <li> {{ items.name }} - {{ items.status }}</li>
           {% if items.status != "Done"%}
           <form action="complete-items/{{items.id}}" method="post">
