@@ -20,9 +20,31 @@
 <br>
   <div class="row">
     <div class="col-md-12">
-      <h2>Items</h2>
+      <h2>To Do:</h2>
       <ul class="list-group mb-4">
-        {% for items in view_model.items %}
+        {% for items in view_model.todo_items %}
+          <li> {{ items.name }} - {{ items.status }}</li>
+          {% if items.status != "Done"%}
+          <form action="complete-items/{{items.id}}" method="post">
+            <button>Complete</button>
+          </form>  
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <h2>Doing:</h2>
+      <ul class="list-group mb-4">
+        {% for items in view_model.doing_items %}
+          <li> {{ items.name }} - {{ items.status }}</li>
+          {% if items.status != "Done"%}
+          <form action="complete-items/{{items.id}}" method="post">
+            <button>Complete</button>
+          </form>  
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <h2>Done:</h2>
+      <ul class="list-group mb-4">
+        {% for items in view_model.done_items %}
           <li> {{ items.name }} - {{ items.status }}</li>
           {% if items.status != "Done"%}
           <form action="complete-items/{{items.id}}" method="post">
