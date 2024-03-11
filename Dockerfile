@@ -4,5 +4,6 @@ ENV PATH=$PATH:/root/.local/bin/
 COPY . /app
 WORKDIR /app
 RUN poetry install
-ENTRYPOINT poetry run flask run
+ENTRYPOINT poetry run flask run --host 0.0.0.0
+
 
