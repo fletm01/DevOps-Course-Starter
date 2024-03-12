@@ -44,7 +44,7 @@ This To Do app uses the Trello API for stroing the To Do items. You'll need to s
 When you have done this you will then need to update the `.env` file to include your details.
 
 
-## Running the App
+## Running the App Locally
 
 Once the all dependencies have been installed, start the Flask app in development mode within the Poetry environment by running:
 ```bash
@@ -69,3 +69,20 @@ To run the tests for the codebase run the following command:
 poetry run pytest
 ```
 Please Note: Make sure you have installed `pytest` by running `poetry add pytest` before running the tests 
+
+## Building and Running the App via Docker
+
+To build the container for local development:
+```bash
+docker build --target development --tag todo-app:dev .
+```
+
+To run the container for local development:
+```bash
+docker run --publish 8000:5000 -it --env-file .env --mount "type=bind,source=$(pwd)/todo_app,target=/app/todo_app" todo-app:dev 
+```
+For the production container, the build and run commands are:
+```bash
+docker build --target production --tag todo-app:prod .
+docker run --publish 8000:5000 -it --env-file .env todo-app:prod
+```
