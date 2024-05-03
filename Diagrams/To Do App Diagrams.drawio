@@ -1,0 +1,179 @@
+<mxfile host="app.diagrams.net" modified="2024-05-02T07:59:01.615Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="rr_aeT2t4cOYYd3yuhjm" version="24.3.1" type="device" pages="3">
+  <diagram name="System Context Diagram" id="KO-rvG8dD9EDTUuCn4gj">
+    <mxGraphModel dx="1426" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JIkIwY7s7LlTj9tH4TWX-1" target="JIkIwY7s7LlTj9tH4TWX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-10" value="via Http API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JIkIwY7s7LlTj9tH4TWX-9">
+          <mxGeometry x="0.075" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-1" value="To Do App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="385" y="49" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="JIkIwY7s7LlTj9tH4TWX-4" target="JIkIwY7s7LlTj9tH4TWX-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="150" as="sourcePoint" />
+            <mxPoint x="440" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-6" value="Http" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JIkIwY7s7LlTj9tH4TWX-3">
+          <mxGeometry x="-0.2571" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-4" value="Web Browser (Client)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="179" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="JIkIwY7s7LlTj9tH4TWX-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="139" as="sourcePoint" />
+            <mxPoint x="440" y="359" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-7" value="Operates" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JIkIwY7s7LlTj9tH4TWX-5">
+          <mxGeometry x="-0.35" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JIkIwY7s7LlTj9tH4TWX-8" value="Trello API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="480" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Dr88knI_qavOnNcAILg2" name="Container Diagram">
+    <mxGraphModel dx="1426" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; To Do App&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;align=right;verticalAlign=bottom;labelPosition=left;verticalLabelPosition=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="320" width="400" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="MgpBAd1wZxYckb7fR3fl-12" target="MgpBAd1wZxYckb7fR3fl-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-2" value="via Http API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MgpBAd1wZxYckb7fR3fl-1">
+          <mxGeometry x="0.075" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MgpBAd1wZxYckb7fR3fl-7" target="MgpBAd1wZxYckb7fR3fl-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="150" as="sourcePoint" />
+            <mxPoint x="440" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-6" value="Http" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MgpBAd1wZxYckb7fR3fl-5">
+          <mxGeometry x="-0.2571" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-7" value="Web Browser (Client)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="179" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-10" value="Trello API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="680" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-12" value="To Do Application Code&amp;nbsp;&lt;div&gt;(Python WSGI App)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="340" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="MgpBAd1wZxYckb7fR3fl-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="400" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-16" value="Passes Request To" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MgpBAd1wZxYckb7fR3fl-15">
+          <mxGeometry x="-0.2333" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-11" value="Flask Webserver" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MgpBAd1wZxYckb7fR3fl-19" value="Passes Request to" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="MgpBAd1wZxYckb7fR3fl-11" target="MgpBAd1wZxYckb7fR3fl-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="530" as="sourcePoint" />
+            <mxPoint x="440" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="h23GBuS2s9irKdNsFP3x" name="Component Diagram">
+    <mxGraphModel dx="1426" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-8" value="To Do Application Code&lt;div&gt;(Python WSGI App)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=top;align=right;verticalAlign=bottom;fontStyle=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="480" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="DOTYXWKuWguntKF_imRO-4" target="TkEhEWIEPH4XLnqmHc_0-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-3" value="via Http API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TkEhEWIEPH4XLnqmHc_0-2">
+          <mxGeometry x="0.075" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="TkEhEWIEPH4XLnqmHc_0-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="239" as="sourcePoint" />
+            <mxPoint x="440" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-5" value="Http" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TkEhEWIEPH4XLnqmHc_0-4">
+          <mxGeometry x="-0.2571" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-7" value="Trello API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="680" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TkEhEWIEPH4XLnqmHc_0-11" target="DOTYXWKuWguntKF_imRO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-14" value="Passes Request to" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="TkEhEWIEPH4XLnqmHc_0-13">
+          <mxGeometry x="-0.358" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TkEhEWIEPH4XLnqmHc_0-11" value="Flask Webserver" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="179" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DOTYXWKuWguntKF_imRO-1" target="DOTYXWKuWguntKF_imRO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-1" value="Web Server Route&lt;div&gt;(app.py)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DOTYXWKuWguntKF_imRO-2" target="DOTYXWKuWguntKF_imRO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-2" value="HTML Templates" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="DOTYXWKuWguntKF_imRO-3" target="DOTYXWKuWguntKF_imRO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="DOTYXWKuWguntKF_imRO-3" target="DOTYXWKuWguntKF_imRO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-3" value="Data Classes&lt;div&gt;(Item / ViewModel)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="427" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DOTYXWKuWguntKF_imRO-4" value="Trello Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
