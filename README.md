@@ -95,3 +95,17 @@ docker run --publish 8000:5000 -it --env-file .env todo-app:prod
 
 ## Diagrams
 Architecture Diagrams can be found in the `Diagrams` sub folder. They were built using [app.diagram.net] (app.diagrams.net) (you can use the `.draw.io` file to edit these diagrams) 
+
+## Azure Hosting
+The container image that is deployed to Azure is hosted on Docker Hub https://hub.docker.com/repository/docker/fletm01/todo-app/general
+
+The To Do app website is hosted at https://mikestodo-app.azurewebsites.net/
+
+To update the website you will need to run the following commands to build and push the container image:
+
+```bash
+docker build --tag fletm01/todo-app --target production .
+docker push fletm01/todo-app
+```
+
+Next youll need to make a POST request to the webhook list provided on the App Service (under the Deployment Centre tab). This will trigger Azure to pull the updated image from Docker Hub.
