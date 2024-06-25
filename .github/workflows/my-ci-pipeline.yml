@@ -29,3 +29,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
+    - run: docker build --target production --tag fletm01/todo-app:prod .
+    - run: docker push fletm01/todo-app:prod
