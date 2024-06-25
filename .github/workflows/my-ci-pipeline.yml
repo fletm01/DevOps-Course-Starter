@@ -18,7 +18,7 @@ jobs:
     
   deploy:
     name: Push to DockerHub and Trigger App Service to Deploy
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     needs: build
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/exercise-9' }}
     steps:
