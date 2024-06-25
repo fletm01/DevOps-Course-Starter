@@ -17,7 +17,7 @@ jobs:
     - run:  docker run todo-app:test
     
   deploy:
-    name: Push to Docker Hub and Trigger App Service to Deploy
+    name: Push to DockerHub and Trigger App Service to Deploy
     runs-on: unbuntu-latest
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/exercise-9' }}
     steps:
