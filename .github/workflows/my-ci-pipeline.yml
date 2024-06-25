@@ -31,4 +31,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - run: docker build --target production --tag fletm01/todo-app:latest .
     - run: docker push fletm01/todo-app:latest
-    - run: curl -dH -X POST ${{ secrets.APP_SERVICE_DEPLOYMENT_WEBHOOK }}
+    - run: curl -dH -X POST '${{ secrets.APP_SERVICE_DEPLOYMENT_WEBHOOK }}'
