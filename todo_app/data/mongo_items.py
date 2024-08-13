@@ -4,7 +4,9 @@ import os
 from todo_app.data.item import Item
 
 client = pymongo.MongoClient(os.getenv("MONGODB_CONNECTION_STRING"))
+
 db = client[os.getenv("MONGODB_DATABASE_NAME")]
+
 collection = db[os.getenv("MONGODB_COLLECTION_NAME")]
 
 
