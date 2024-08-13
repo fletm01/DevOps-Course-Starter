@@ -14,7 +14,7 @@ class ViewModel:
         output = []
 
         for item in self._items:
-            if item.status == "To_do":
+            if item.status == "To_Do":
                 output.append(item)
 
         return output

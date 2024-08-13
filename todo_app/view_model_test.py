@@ -18,7 +18,7 @@ def test_todo_items_property_only_shows_todo_items_and_nothing_else():
     # assert
     assert len(returned_items) == 1
     returned_single_item = returned_items [0]
-    assert returned_single_item.status == "To do"
+    assert returned_single_item.status == "To_Do"
 
 
 def test_doing_items_property_only_shows_doing_items_and_nothing_else():
