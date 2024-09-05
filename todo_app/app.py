@@ -1,7 +1,7 @@
 from flask import Flask, render_template, redirect, request
 from todo_app.data.view_model import ViewModel
 from todo_app.flask_config import Config
-from todo_app.data.trello_items import add_item, get_items, move_item_to_done
+from todo_app.data.mongo_items import add_item, get_items, move_item_to_done
 
 def create_app():
     app = Flask(__name__)
