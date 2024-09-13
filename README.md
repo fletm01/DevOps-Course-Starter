@@ -109,3 +109,11 @@ docker push fletm01/todo-app
 ```
 
 Next youll need to make a POST request to the webhook list provided on the App Service (under the Deployment Centre tab). This will trigger Azure to pull the updated image from Docker Hub.
+
+## Data Encryption
+
+To do items are stored in a Cosmos DB Database (using a MongoDB API). Data is encrypted at rest by default.
+
+https://learn.microsoft.com/en-us/azure/cosmos-db/database-encryption-at-rest
+
+The app service is hosted over HTTPS (enforced, i.e. HTTP redirects to HTTPS). Similarly TLS is enabled for connecting to the MongoDB CosmosDB database.
