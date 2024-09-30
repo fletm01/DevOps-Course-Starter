@@ -15,6 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - run:  docker build --target test --tag todo-app:test .
     - run:  docker run todo-app:test
+    - run:  docker build --target dependency-scan --tag todo-app:scan .
+    - run:  docker run todo-app:scan
+      continue-on-error: true
     
   deploy:
     name: Push to DockerHub and Trigger App Service to Deploy

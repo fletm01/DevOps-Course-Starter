@@ -17,3 +17,7 @@ ENTRYPOINT poetry run flask run --host 0.0.0.0
 FROM base as test
 COPY .env.test /app/
 ENTRYPOINT poetry run pytest
+
+FROM base as dependency-scan
+COPY .env.test /app/
+ENTRYPOINT poetry run safety check
