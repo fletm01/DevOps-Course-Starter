@@ -118,3 +118,8 @@ env/
 
 ### Configuration files ###
 .env
+.terraform
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+.terraform.state
