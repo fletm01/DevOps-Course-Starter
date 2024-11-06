@@ -40,5 +40,5 @@ jobs:
     - run: docker build --target production --tag fletm01/todo-app:latest .
     - run: docker push fletm01/todo-app:latest
     - run: terraform init
-    - run: terraform apply -auto-approve -var prefix-demo
+    - run: terraform apply -auto-approve -var="prefix=demo"
     - run: curl -dH -X POST "$(terraform output -raw webhook_url)"
