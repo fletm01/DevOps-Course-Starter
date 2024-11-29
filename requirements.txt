@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+requests
+pytest
+pymongo
+mongomock
+safety

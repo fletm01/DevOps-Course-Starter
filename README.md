@@ -12,6 +12,7 @@ The project uses poetry for Python to create an isolated environment and manage 
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
+
 ### Poetry installation (PowerShell)
 
 ```powershell

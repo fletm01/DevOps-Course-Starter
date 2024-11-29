@@ -23,7 +23,12 @@ jobs:
     name: Push to DockerHub and Trigger App Service to Deploy
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/exercise-10' }}
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/exercise-12' }}
+    env:
+      ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+      ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
     steps:
     - uses: actions/checkout@v2
     - run: echo hello deploy
@@ -34,4 +39,6 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - run: docker build --target production --tag fletm01/todo-app:latest .
     - run: docker push fletm01/todo-app:latest
-    - run: curl -dH -X POST '${{ secrets.APP_SERVICE_DEPLOYMENT_WEBHOOK }}'
+    - run: terraform init
+    - run: terraform apply -auto-approve -var="prefix=demo"
+    - run: curl -dH -X POST "$(terraform output -raw webhook_url)"
